@@ -47,12 +47,12 @@ The following environment variables will be automatically used for the Knex.js c
   KOA_KNEX_SSL
   KOA_KNEX_DEBUG
 ```
-  
+
 ### License
 
 [MIT](http://www.opensource.org/licenses/mit-license.php)
 
 [npm-image]: https://img.shields.io/npm/v/koa-knex.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/koa-knex
-[daviddm-image]: http://img.shields.io/david/tjwebb/koa-knex-middleware.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/tjwebb/koa-knex-middleware
+[daviddm-image]: http://img.shields.io/david/jrasanen/koa-knex-middleware.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/jrsasanen/koa-knex-middleware
