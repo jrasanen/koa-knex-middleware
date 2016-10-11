@@ -4,7 +4,7 @@ module.exports = function (opts) {
   return function *knex(next) {
     var conn = opts.connection || { };
     var env = process.env;
-    global.__knex || (global.__knex = Knex.initialize({
+    global.__knex || (global.__knex = Knex({
       client: opts.client,
       debug: opts.debug || env.KOA_KNEX_DEBUG,
       connection: {
@@ -21,7 +21,7 @@ module.exports = function (opts) {
       }
     }));
     this.knex = global.__knex;
-    
+
     if(opts.debug || env.KOA_KNEX_DEBUG) {
       var self = this;
       this.knex.once('start', function (builder){
